@@ -1,8 +1,8 @@
+import * as Notifications from "expo-notifications";
 import { Stack } from "expo-router";
-import * as Notifications from 'expo-notifications';
 
 Notifications.setNotificationHandler({
-  handleNotification: async () =>({
+  handleNotification: async () => ({
     shouldShowAlert: true,
     shouldPlaySound: true,
     shouldSetBadge: false,
@@ -11,21 +11,14 @@ Notifications.setNotificationHandler({
   }),
 });
 
-export default function RootLayout(){
-  return(
+export default function RootLayout() {
+  return (
     <Stack>
-      
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      
-      
-      <Stack.Screen 
-        name="add-task" 
-        options={{ 
-          title: 'Add Task', 
-          presentation: 'modal' 
-        }} 
+      <Stack.Screen
+        name="add-task"
+        options={{ presentation: "modal", title: "Add New Task" }}
       />
     </Stack>
   );
 }
-
