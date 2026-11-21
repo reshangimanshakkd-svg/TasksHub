@@ -41,7 +41,7 @@ export default function DashboardScreen() {
   return (
     <ImageBackground
       source={{
-        uri: "https://img.magnific.com/free-vector/isometric-time-management-concept-illustrated_52683-55534.jpg?semt=ais_hybrid&w=740&q=80",
+        uri: "https://tse3.mm.bing.net/th/id/OIP.ohxf_wrivOV6jERpH4BL3wAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
       }}
       style={styles.background}
       resizeMode="cover"
